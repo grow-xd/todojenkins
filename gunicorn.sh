@@ -2,7 +2,7 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/workspace/django-cicd/todocicd
+cd /var/lib/jenkins/workspace/todojenkins/todocicd
 
 
 
@@ -11,7 +11,7 @@ python3 manage.py migrate
 
 echp "Migration done"
 
-cd /var/lib/jenkins/workspace/django-cicd
+cd /var/lib/jenkins/workspace/todojenkins
 
 sudo cp -rf gunicorn.socket /etc/systemd/system/
 sudo cp -rf gunicorn.service /etc/systemd/system/
