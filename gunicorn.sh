@@ -9,7 +9,7 @@ cd /var/lib/jenkins/workspace/django-cicd/todocicd
 python3 manage.py makemigrations
 python3 manage.py migrate
 
-ech0 "Migration done"
+echo "Migration done"
 
 cd /var/lib/jenkins/workspace/django-cicd
 
