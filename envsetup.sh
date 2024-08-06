@@ -10,7 +10,7 @@ fi
 source env/bin/activate
 
 
-sudo pip3 install -r requirements.txt
+sudo pip3 install --user -r requirements.txt
 
 if [ -d "logs" ] 
 then
