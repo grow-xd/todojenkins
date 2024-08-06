@@ -9,6 +9,14 @@ pipeline{
                 '''
             }
         }
+        stage('Install redis'){
+            steps{
+                sh '''
+                    chmod +x redis.sh
+                    ./redis.sh
+                '''
+            }
+        }
         stage('Setup Gunicorn Setup'){
             steps{
                 sh '''
